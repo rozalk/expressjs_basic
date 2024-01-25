@@ -1,3 +1,5 @@
+const { route } = require("./route.books");
+
 const router = require("express").Router();
 
 // router.get("/:name", (req, res, next) => {
@@ -8,6 +10,10 @@ const router = require("express").Router();
 //     next(e);
 //   }
 // });
+
+router.get("/", (req, res) => {
+  res.json({ msg: "Hello from new " });
+});
 
 router.get("/:id", (req, res, next) => {
   try {
