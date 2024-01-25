@@ -12,7 +12,7 @@ const router = require("express").Router();
 // });
 
 router.get("/", (req, res) => {
-  res.json({ msg: "Hello from new r " });
+  res.json({ msg: "Hello from new routes " });
 });
 
 router.get("/:id", (req, res, next) => {
